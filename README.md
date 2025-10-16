@@ -34,3 +34,11 @@ Follow these simple steps 👇
 ### 1️⃣ Clone this repository
 ```bash
 git clone https://github.com/Namitaa2002/lms_project.git
+## 📸 Project Screenshots
+
+### 🏠 Home Page
+![Home Page](library/static/library/images/home_page.png)
+
+### 🔐 Sign In Page
+![Sign In Page](library/static/library/images/signin_page.png)
+
