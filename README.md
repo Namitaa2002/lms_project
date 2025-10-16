@@ -36,4 +36,4 @@ Follow these simple steps 👇
 git clone https://github.com/Namitaa2002/lms_project.git
 
 
-<img width="1895" height="946" alt="home_page" src="https://github.com/user-attachments/assets/e4bf146f-ec96-4e40-b049-7468a2722348" />
+
