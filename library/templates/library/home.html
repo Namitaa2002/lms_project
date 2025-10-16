@@ -1,0 +1,101 @@
+{% extends "library/base.html" %}
+{% load static %}
+
+{% block title %}Home | MyLibrary{% endblock %}
+
+{% block content %}
+<!-- Carousel -->
+<div id="libraryCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'library/images/crousel1.avif' %}" class="d-block w-100 carousel-img" alt="Library Books">
+      <div class="carousel-caption d-none d-md-block">
+        <h2 class="display-5 fw-bold text-shadow">Welcome to MyLibrary</h2>
+        <p class="lead">Manage books, students, and records with ease</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'library/images/crousel2.avif' %}" class="d-block w-100 carousel-img" alt="Library Students">
+      <div class="carousel-caption d-none d-md-block">
+        <h2 class="display-5 fw-bold text-shadow">Student Friendly</h2>
+        <p class="lead">Track issued and returned books smoothly</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#libraryCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#libraryCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<!-- About Section -->
+<section class="about-section text-center py-5">
+  <div class="container">
+    <h2 class="section-title">About MyLibrary</h2>
+    <p class="lead mt-3">MyLibrary is a simple and efficient system to manage books, students, and their borrowing activities — designed for schools and colleges using Django & Bootstrap.</p>
+  </div>
+</section>
+
+<!-- Features Section -->
+<section class="features-section py-5 text-center">
+  <div class="container">
+    <h2 class="section-title">Key Features</h2>
+    <div class="row mt-4 g-4">
+      <div class="col-md-4">
+        <div class="feature-card shadow-lg">
+          <h4>📘 Manage Books</h4>
+          <p>Easily add, update, or delete book records with one click.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="feature-card shadow-lg">
+          <h4>👩‍🎓 Manage Students</h4>
+          <p>Keep detailed records of student information and issued books.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="feature-card shadow-lg">
+          <h4>📖 Issue & Return</h4>
+          <p>Track issued and returned books in real-time with history logs.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonials-section py-5 bg-light text-center">
+  <div class="container">
+    <h2 class="section-title">What Our Users Say</h2>
+    <div class="row mt-4 justify-content-center">
+      <div class="col-md-6">
+        <div class="testimonial p-4 shadow rounded bg-white">
+          <p class="fst-italic">“This system made managing our library easy and efficient!”</p>
+          <h6 class="fw-bold mt-3">Priya Sharma</h6>
+          <p class="text-muted">Librarian, LNCT College</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact-section py-5 text-center">
+  <div class="container">
+    <h2 class="section-title text-black">Contact Us</h2>
+    <p class="lead text-white mt-3">Have questions or suggestions? We'd love to hear from you.</p>
+    <a href="{% url 'contact' %}" class="btn btn-light mt-3">Get in Touch</a>
+  </div>
+</section>
+
+<!-- Call to Action -->
+<section class="cta-section py-5 text-center bg-dark text-light">
+  <div class="container">
+    <h3>Ready to Explore the Library?</h3>
+    <a href="{% url 'books' %}" class="btn btn-outline-light mt-3">Browse Books</a>
+  </div>
+</section>
+
+{% endblock %}

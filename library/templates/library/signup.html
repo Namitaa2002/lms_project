@@ -1,0 +1,16 @@
+{% extends "library/base.html" %}
+{% block title %}Sign Up{% endblock %}
+{% block content %}
+<div class="container py-5" style="max-width:500px;">
+  <h2 class="text-center mb-4">Create Account</h2>
+  {% if error %}<div class="alert alert-danger">{{ error }}</div>{% endif %}
+  <form method="POST">
+    {% csrf_token %}
+    <input type="text" name="username" class="form-control mb-3" placeholder="Username" required>
+    <input type="email" name="email" class="form-control mb-3" placeholder="Email" required>
+    <input type="password" name="password" class="form-control mb-3" placeholder="Password" required>
+    <button class="btn btn-primary w-100" type="submit">Sign Up</button>
+  </form>
+  <p class="text-center mt-3">Already have an account? <a href="{% url 'signin' %}">Sign In</a></p>
+</div>
+{% endblock %}
