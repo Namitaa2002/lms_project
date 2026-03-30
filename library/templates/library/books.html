@@ -7,17 +7,17 @@
   <table class="table table-bordered">
     <thead>
       <tr>
-        <th>Title</th>
+        <th>Name</th>
         <th>Author</th>
-        <th>ISBN</th>
+        <th>Book ID</th>
       </tr>
     </thead>
     <tbody>
       {% for book in books %}
       <tr>
-        <td>{{ book.title }}</td>
+        <td>{{ book.name }}</td>
         <td>{{ book.author }}</td>
-        <td>{{ book.isbn }}</td>
+        <td>{{ book.bookID }}</td>
       </tr>
       {% empty %}
       <tr>
